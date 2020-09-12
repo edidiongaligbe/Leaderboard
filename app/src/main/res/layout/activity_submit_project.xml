@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitProject"
+    android:background="@color/appBackground">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:background="@color/appBackground"
+        android:id="@+id/submit_appbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="60sp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5sp"
+                android:src="@drawable/ic_action_name"
+                android:background="@color/appBackground"></ImageButton>
+
+            <ImageView
+                android:layout_width="250sp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gads_submit"
+                android:layout_marginBottom="15sp"
+                android:layout_marginRight="30sp"></ImageView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tvTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:text="@string/submissionTitle"
+        android:textColor="@color/appOrange"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/submit_appbar"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/ivDivider"
+        android:layout_width="match_parent"
+        android:layout_height="3sp"
+        android:layout_below="@+id/tvTitleText"
+        android:background="@drawable/title_text_background"
+        android:layout_marginBottom="35sp"
+        ></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivDivider"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="55sp"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="180sp"
+            android:layout_height="50sp"
+            android:background="@drawable/text_background"
+            android:inputType="text"
+            android:layout_marginBottom="25sp"
+            android:hint="@string/fNameh"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:textSize="20sp">
+
+        </EditText>
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="180sp"
+            android:layout_height="50sp"
+            android:background="@drawable/text_background"
+            android:inputType="text"
+            android:layout_alignParentRight="true"
+            android:hint="@string/lNameh"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/text_background"
+            android:inputType="text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etLastName"
+            android:layout_marginTop="50sp"
+            android:hint="@string/emailh"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etGithubLink"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/text_background"
+            android:inputType="text"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="50sp"
+            android:hint="@string/githubh"
+            android:gravity="center_vertical"
+            android:paddingLeft="10sp"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnPostData"
+            android:layout_width="200sp"
+            android:layout_height="55sp"
+            android:layout_below="@+id/etGithubLink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/orange_submit"
+            android:gravity="center"
+            android:text="@string/pSubmitText"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="false">
+
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>

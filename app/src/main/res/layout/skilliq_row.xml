@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imSkillBadge"
+            android:layout_width="150sp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/skill_iq_badge"/>
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_width="240sp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvSName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvSInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/tvSName"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
